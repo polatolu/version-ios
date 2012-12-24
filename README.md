@@ -13,8 +13,8 @@ Helps to parse up to 4 field version numbers and compare them.
 
 ```objective-c
 // Init Version object.
-Version version1 = [[Version alloc] initWithString@"1.5.0.0"];
-Version version2 = [[Version alloc] initWithString@"1.5.0.1"];
+Version version1 = [[Version alloc] initWithString:@"1.5.0.0"];
+Version version2 = [[Version alloc] initWithString:@"1.5.0.1"];
 
 // Compare version objects
 NSComparisonResult result = [version1 compare:version2];
