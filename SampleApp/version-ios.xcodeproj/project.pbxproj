@@ -23,8 +23,7 @@
 		A417E3171687D6A200C8A535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417E2ED1687D66400C8A535 /* Foundation.framework */; };
 		A417E31D1687D6A200C8A535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A417E31B1687D6A200C8A535 /* InfoPlist.strings */; };
 		A417E3201687D6A200C8A535 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A417E31F1687D6A200C8A535 /* VersionTests.m */; };
-		A417E3281687D71A00C8A535 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = A417E3271687D71A00C8A535 /* Version.m */; };
-		A417E3291687DBC700C8A535 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = A417E3271687D71A00C8A535 /* Version.m */; };
+		A417E3351688F67200C8A535 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = A417E3341688F67200C8A535 /* Version.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +50,8 @@
 		A417E31E1687D6A200C8A535 /* VersionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionTests.h; sourceTree = "<group>"; };
 		A417E31F1687D6A200C8A535 /* VersionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionTests.m; sourceTree = "<group>"; };
 		A417E3211687D6A200C8A535 /* VersionTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VersionTests-Prefix.pch"; sourceTree = "<group>"; };
-		A417E3261687D71A00C8A535 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
-		A417E3271687D71A00C8A535 /* Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
+		A417E3331688F67200C8A535 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Version.h; path = ../../Version/Version.h; sourceTree = "<group>"; };
+		A417E3341688F67200C8A535 /* Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Version.m; path = ../../Version/Version.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +111,7 @@
 		A417E2F11687D66400C8A535 /* version-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A417E3251687D71A00C8A535 /* Version */,
+				A417E3361688F67900C8A535 /* Version */,
 				A417E2FA1687D66400C8A535 /* AppDelegate.h */,
 				A417E2FB1687D66400C8A535 /* AppDelegate.m */,
 				A417E3031687D66500C8A535 /* ViewController.h */,
@@ -157,13 +156,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A417E3251687D71A00C8A535 /* Version */ = {
+		A417E3361688F67900C8A535 /* Version */ = {
 			isa = PBXGroup;
 			children = (
-				A417E3261687D71A00C8A535 /* Version.h */,
-				A417E3271687D71A00C8A535 /* Version.m */,
+				A417E3331688F67200C8A535 /* Version.h */,
+				A417E3341688F67200C8A535 /* Version.m */,
 			);
-			path = Version;
+			name = Version;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +276,7 @@
 				A417E2F81687D66400C8A535 /* main.m in Sources */,
 				A417E2FC1687D66400C8A535 /* AppDelegate.m in Sources */,
 				A417E3051687D66500C8A535 /* ViewController.m in Sources */,
-				A417E3281687D71A00C8A535 /* Version.m in Sources */,
+				A417E3351688F67200C8A535 /* Version.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417E3291687DBC700C8A535 /* Version.m in Sources */,
 				A417E3201687D6A200C8A535 /* VersionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +439,7 @@
 				A417E30D1687D66500C8A535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A417E3221687D6A200C8A535 /* Build configuration list for PBXNativeTarget "VersionTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +448,7 @@
 				A417E3241687D6A200C8A535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

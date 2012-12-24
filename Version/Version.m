@@ -71,12 +71,12 @@
 - (NSComparisonResult) compare:(Version *) v {
     NSComparisonResult result = NSOrderedSame;
     
-    long selfVal = [self getNumericFormat];
+    long long selfVal = [self getNumericFormat];
     
     if (v == nil)
         return NSOrderedAscending;
     
-    long vVal = [v getNumericFormat];
+    long long vVal = [v getNumericFormat];
     
     if (selfVal > vVal) {
         result = NSOrderedAscending;
@@ -88,12 +88,12 @@
     return result;
 }
 
-- (long) getNumericFormat {
+- (long long) getNumericFormat {
     
-    long majorVal = [self major]        * 1000000000000;
-    long minorVal = [self minor]        * 1000000000;
-    long releaseVal = [self release]    * 1000000;
-    long buildVal = [self build]        * 1000;
+    long long majorVal = [self major]        * 1000000000000;
+    long long minorVal = [self minor]        * 1000000000;
+    long long releaseVal = [self release]    * 1000000;
+    long long buildVal = [self build]        * 1000;
     
     return majorVal + minorVal + releaseVal + buildVal;
 }

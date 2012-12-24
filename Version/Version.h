@@ -24,5 +24,5 @@
 - (NSComparisonResult) compare:(Version *) v;
 
 // Returns the numeric representation of version
-- (long) getNumericFormat;
+- (long long) getNumericFormat;
 @end

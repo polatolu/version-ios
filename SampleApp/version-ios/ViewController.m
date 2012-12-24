@@ -37,19 +37,19 @@
     NSString *v2Text = [self.txtVersion2 text];
     
     // Create version objects
-    Version *v1 = [[Version alloc] initWithString:v1Text];
-    Version *v2 = [[Version alloc] initWithString:v2Text];
+    Version *v1 = [[[Version alloc] initWithString:v1Text] autorelease];
+    Version *v2 = [[[Version alloc] initWithString:v2Text] autorelease];
     
     // Compare and show the result
-    int result = [v1 compare:v2];
+    NSComparisonResult result = [v1 compare:v2];
     
     switch (result) {
         case NSOrderedAscending:
-            [self.lblResult setText:@"Version 1 is smaller"];
+            [self.lblResult setText:@"Version 1 is bigger"];
             break;
             
         case NSOrderedDescending:
-            [self.lblResult setText:@"Version 1 is bigger"];
+            [self.lblResult setText:@"Version 1 is smaller"];
             break;
 
         case NSOrderedSame:
@@ -60,6 +60,7 @@
             [self.lblResult setText:@"Undeterminated"];
             break;
     }
+    
 }
 
 @end
