@@ -7,7 +7,6 @@ Helps to parse up to 4 field version numbers and compare them.
  * Each field is optional.
  * Version object is comparable with other version objects
  * Simple to use
- * 
 
 ## Sample Usage
 
